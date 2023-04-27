@@ -1,0 +1,73 @@
+{
+  "name": "rec-your-screen",
+  "version": "10.0.0",
+  "description": "Rec Your Screen is a simple screen recorder for Windows, Mac and Linux.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "build --dir",
+    "dist": "build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "devDependencies": {
+    "electron": "9.0.0",
+    "electron-builder": "^19.0.0",
+    "parcel-bundler": "^1.8.1"
+  },
+  "build": {
+    "publish": [
+      {
+        "provider": "generic",
+        "url": ""
+      }
+    ],
+    "productName": "Rec Your Screen",
+    "appId": "rys",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "installerIcon": "icon.ico",
+      "uninstallerIcon": "icon.ico",
+      "uninstallDisplayName": "Rec Your Screen",
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Rec Your Screen",
+      "allowElevation": true,
+      "perMachine": false
+    },
+    "linux": {
+      "icon": "icon.icns",
+      "target": [
+        "deb",
+        "snap",
+        "rpm",
+        "AppImage"
+      ],
+      "category": "Utility"
+    },
+    "deb": {
+      "icon": "icon.icns"
+    },
+    "mac": {
+      "target": [
+        "dmg"
+      ],
+      "icon": "icon.icns"
+    },
+    "dmg": {
+      "icon": "icon.icns"
+    }
+  },
+  "author": "",
+  "license": "LICENSE.md"
+}

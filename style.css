@@ -1,0 +1,59 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #000;
+  }
+  
+  
+  video {
+    padding: 0;
+    width: 100%;
+    height: auto;
+  }
+  
+  body {
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  .start{
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .start:hover{
+  transform: scale(0.95);
+  }
+  
+  .stop{
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .stop:hover{
+  transform: scale(0.95);
+  }
+  
+  .selectVideo{
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .selectVideo:hover{
+  transform: scale(0.95);
+  }
+  
