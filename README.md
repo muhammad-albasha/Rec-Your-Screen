@@ -1,4 +1,4 @@
-# ChatGPT-Desktop-App
+# RecYourScreen-Desktop-App
 <P style="text-align:center;">
  <img src="icon.png" alt="recApp" width="200px"/>
  <br/>
